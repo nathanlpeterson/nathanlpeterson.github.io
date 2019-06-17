@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+</head>
+
+<body>
+    This is a Power BI demo - Input is 3 columns for each second: Case (Device), TimeStamp, On/Off.<br><br>
+
+    Attributes:<br>
+    Device: Type of device used.<br>
+    Case: A particular instance of a device - used by one particular patient. A Case is a combination of patient / device.<br>
+    Event: An occurence of a particular device being On or Off.<br>
+    Patient: Person who uses device.<br><br>
+
+    Measures:<br>
+    % Time On: Number of Seconds the device(s) were on divided by the Total Number of Seconds within context.<br>
+    Avg Seconds Per Event: Number of Seconds the device(s) were on divided by the Number of Times the devices were switched on.<br>
+    Number of Times On: Count of times devices were switched on.<br>
+    Total Seconds On: Number of Seconds the device(s) were on.<br><br>
+
+    Getting Around:<br>
+    The lower left-hand corner of each page contains a Bookmark and Filter button. When clicked, these reveal their associated ribbon. Click the Left button to hide the ribbon.<br><br>
+
+    Notes on the Sample Data:<br>
+    Populated a row for each second of a single 24 hour period for each of 10 devices, with randomized On/Off. One drawback is that the Measures are Highly Correlated.<br> 
+    Because of this, it is difficult to demonstrate visualizing how multiple variables work with each other.<br><br>
+<iframe width="800" height="600" src="https://app.powerbi.com/groups/me/reports/30c92e06-7d22-4cf4-bbdd-ac6de48aac83?ctid=35069d74-1489-4194-80c7-3a81385ead5b" frameborder="0" allowFullScreen="true"></iframe>
+</body>
+</html>
+
